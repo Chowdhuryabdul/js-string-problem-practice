@@ -1,5 +1,6 @@
 /* to find something in the strong we need to use - includesof */
 
+// Use if include 
 const lyrics = 'tumi bondhu kala pakdhi ame jeno ki. boshontto kale tumai bolte parini'
 
 // const findOneThing = lyrics.includes('jeno');
@@ -16,4 +17,31 @@ const serachStringLower = serachString.toLowerCase()
 // const findOneThing = lyricsLowercase.includes(serachStringLower)
 
 const findOneThingInOneLine = lyrics.toLowerCase().includes(serachString.toLowerCase())
-console.log(findOneThingInOneLine)
+// console.log(findOneThingInOneLine)
+
+// indexof - it usualy get the first one
+
+console.log(lyrics.indexOf('kala'))
+// want to get last one than need to use lastindexof 
+console.log(lyrics.lastIndexOf('ki'))
+
+if(lyrics.indexOf('kala') !== -1){
+    console.log('it eixts inside the sentence')
+}
+else{
+    console.log('not exist')
+}
+
+// startswith
+
+
+console.log(lyrics.startsWith('tumi'))
+
+// endswith 
+
+const fileName = 'mybiodata.pdf';
+const otherFile = 'mypic.png'
+
+fileName.endsWith('.pdf')
+
+
